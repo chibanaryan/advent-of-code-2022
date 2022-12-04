@@ -13,7 +13,6 @@ needed_result = {
     "Y": "Draw",
     "Z": "Won",
 }
-
 shape_score = {
     "Rock": 1,
     "Paper": 2,
@@ -33,8 +32,8 @@ if __name__ == "__main__":
     score_part2 = 0
     for line in lines:
         result = ""
-        split_line = line.split(' ')
-        f, s = split_line[0], split_line[1].removesuffix('\n')
+        split_line = line.strip('\n').split(' ')
+        f, s = split_line[0], split_line[1]
         if first[f] == "Rock" and second[s] == "Paper" or (first[f] == "Paper" and second[s] == "Scissors") or (first[f] == "Scissors" and second[s] == "Rock"):
             result = "Won"
         elif first[f] == second[s]:

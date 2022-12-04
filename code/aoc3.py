@@ -1,8 +1,7 @@
 def char_to_priority(c):
     if c.islower():
         return ord(c) - ord('a') + 1
-    elif c.isupper():
-        return ord(c) - ord('A') + 27
+    return ord(c) - ord('A') + 27
 
 
 if __name__ == "__main__":
@@ -23,7 +22,7 @@ if __name__ == "__main__":
         priority_sum += char_to_priority(unique_char)
         groups.append(set(line))
         if len(groups) == 3:
-            common_char = groups[0].intersection(groups[1]).intersection(groups[2]).pop()
+            common_char = groups[0].intersection(groups[1], groups[2]).pop()
             group_sum += char_to_priority(common_char)
             groups = []
     print(priority_sum)
