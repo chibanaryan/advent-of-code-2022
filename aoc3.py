@@ -1,7 +1,3 @@
-import requests
-import heapq
-
-
 def char_to_priority(c):
     if c.islower():
         return ord(c) - ord('a') + 1

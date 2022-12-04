@@ -1,7 +1,3 @@
-import requests
-import heapq
-
-
 if __name__ == "__main__":
     with open('input4.txt') as f:
         lines = f.readlines()

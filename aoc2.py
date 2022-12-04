@@ -1,5 +1,3 @@
-import heapq
-
 first = {
     "A": "Rock",
     "B": "Paper",
@@ -36,7 +34,6 @@ if __name__ == "__main__":
     for line in lines:
         result = ""
         split_line = line.split(' ')
-        print(split_line)
         f, s = split_line[0], split_line[1].removesuffix('\n')
         if first[f] == "Rock" and second[s] == "Paper" or (first[f] == "Paper" and second[s] == "Scissors") or (first[f] == "Scissors" and second[s] == "Rock"):
             result = "Won"
@@ -69,29 +66,3 @@ if __name__ == "__main__":
         score_part2 += result_score[target]
     print(score_part1)
     print(score_part2)
-
-
-
-
-
-    # with open('input1.txt') as f:
-    #     lines = f.readlines()
-    
-    # top_elves = []
-    # elf_count = 0
-    # max_elf_count = 0
-    # for line in lines:
-    #     if line == '\n':
-    #         max_elf_count = max(max_elf_count, elf_count)
-    #         heapq.heappush(top_elves, -elf_count)
-    #         elf_count = 0
-    #     else:
-    #         elf_count += int(line)
-
-    
-    # print(max_elf_count)
-    # s = 0
-    # s += heapq.heappop(top_elves)
-    # s += heapq.heappop(top_elves)
-    # s += heapq.heappop(top_elves)
-    # print(s)
