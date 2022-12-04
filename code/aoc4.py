@@ -1,5 +1,5 @@
 if __name__ == "__main__":
-    with open('input4.txt') as f:
+    with open('inputs/input4.txt') as f:
         lines = f.readlines()
 
     contained_set_cnt = 0

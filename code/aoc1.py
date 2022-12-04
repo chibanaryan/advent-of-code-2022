@@ -2,7 +2,7 @@ import heapq
 
 
 if __name__ == "__main__":
-    with open('input1.txt') as f:
+    with open('inputs/input1.txt') as f:
         lines = f.readlines()
     
     top_elves = []

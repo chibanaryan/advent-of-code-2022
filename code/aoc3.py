@@ -6,7 +6,7 @@ def char_to_priority(c):
 
 
 if __name__ == "__main__":
-    with open('input3.txt') as f:
+    with open('inputs/input3.txt') as f:
         lines = f.readlines()
     
     priority_sum = 0

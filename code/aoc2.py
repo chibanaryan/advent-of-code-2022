@@ -27,7 +27,7 @@ result_score = {
 
 
 if __name__ == "__main__":
-    with open('input2.txt') as f:
+    with open('inputs/input2.txt') as f:
         lines = f.readlines()
     score_part1 = 0
     score_part2 = 0
